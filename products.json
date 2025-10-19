@@ -1,0 +1,172 @@
+[
+  {
+    "id": "mutant-mass-227",
+    "name": "Mutant Mass 2.27kg",
+    "brand": "Mutant",
+    "price": 1499,
+    "img": "img/mutant-mass.webp",
+    "category": "suplementos",
+    "subcat": "proteinas",
+    "bestSeller": true,
+    "tags": [
+      "ganador",
+      "carbohidratos",
+      "chocolate"
+    ],
+    "shortDesc": "Ganador de peso de alta carga calórica."
+  },
+  {
+    "id": "nitrotech-2lb",
+    "name": "NitroTech 2lb",
+    "brand": "Muscletech",
+    "price": 1299,
+    "img": "img/nitrotech.webp",
+    "category": "suplementos",
+    "subcat": "proteinas",
+    "bestSeller": true,
+    "tags": [
+      "whey",
+      "muscle"
+    ],
+    "shortDesc": "Proteína de suero con creatina y BCAAs."
+  },
+  {
+    "id": "rc-yeah-buddy",
+    "name": "Yeah Buddy 300g",
+    "brand": "Ronnie Coleman",
+    "price": 699,
+    "img": "img/yeahbuddy.webp",
+    "category": "suplementos",
+    "subcat": "preentreno",
+    "bestSeller": false,
+    "tags": [
+      "pre",
+      "energia"
+    ],
+    "shortDesc": "Preentreno intenso para máximo enfoque."
+  },
+  {
+    "id": "cell-tech",
+    "name": "Cell-Tech 1.3kg",
+    "brand": "Muscletech",
+    "price": 899,
+    "img": "img/celltech.webp",
+    "category": "suplementos",
+    "subcat": "creatina",
+    "bestSeller": false,
+    "tags": [
+      "creatina",
+      "volumen"
+    ],
+    "shortDesc": "Creatina con carbohidratos para volumen."
+  },
+  {
+    "id": "omega-3",
+    "name": "Omega 3 100 caps",
+    "brand": "Dinamita",
+    "price": 299,
+    "img": "img/omega3.webp",
+    "category": "suplementos",
+    "subcat": "vitaminas",
+    "bestSeller": false,
+    "tags": [
+      "salud"
+    ],
+    "shortDesc": "Ácidos grasos esenciales EPA/DHA."
+  },
+  {
+    "id": "shaker-700",
+    "name": "Shaker 700ml",
+    "brand": "Dinamita",
+    "price": 199,
+    "img": "img/shaker.webp",
+    "category": "accesorios",
+    "bestSeller": true,
+    "tags": [
+      "shaker",
+      "botella"
+    ],
+    "shortDesc": "Vaso mezclador con rejilla anti grumos."
+  },
+  {
+    "id": "faja-pro",
+    "name": "Faja lumbar Pro",
+    "brand": "Dinamita",
+    "price": 499,
+    "img": "img/faja.webp",
+    "category": "accesorios",
+    "bestSeller": false,
+    "tags": [
+      "soporte",
+      "espalda"
+    ],
+    "shortDesc": "Soporte lumbar para levantamiento."
+  },
+  {
+    "id": "guantes-grip",
+    "name": "Guantes con grip",
+    "brand": "Dinamita",
+    "price": 349,
+    "img": "img/guantes.webp",
+    "category": "accesorios",
+    "bestSeller": false,
+    "tags": [
+      "guantes"
+    ],
+    "shortDesc": "Agarre mejorado y protección."
+  },
+  {
+    "id": "playera-custom",
+    "name": "Playera personalizada",
+    "brand": "Dinamita Custom",
+    "price": 299,
+    "img": "img/playera.webp",
+    "category": "custom",
+    "bestSeller": true,
+    "tags": [
+      "personalizable",
+      "DTF"
+    ],
+    "shortDesc": "Elige talla, color y tu frase."
+  },
+  {
+    "id": "termo-custom",
+    "name": "Termo personalizado",
+    "brand": "Dinamita Custom",
+    "price": 399,
+    "img": "img/termo.webp",
+    "category": "custom",
+    "bestSeller": false,
+    "tags": [
+      "termo",
+      "personalizable"
+    ],
+    "shortDesc": "Acero inoxidable, grabado a láser."
+  },
+  {
+    "id": "prote-drink",
+    "name": "Proteína líquida 500ml",
+    "brand": "Dinamita Café",
+    "price": 89,
+    "img": "img/proteina-liquida.webp",
+    "category": "cafeteria",
+    "bestSeller": false,
+    "tags": [
+      "bebida"
+    ],
+    "shortDesc": "Batido listo para tomar."
+  },
+  {
+    "id": "americano",
+    "name": "Café Americano",
+    "brand": "Dinamita Café",
+    "price": 39,
+    "img": "img/cafe-americano.webp",
+    "category": "cafeteria",
+    "bestSeller": true,
+    "tags": [
+      "cafe"
+    ],
+    "shortDesc": "Café 100% arábica."
+  }
+]

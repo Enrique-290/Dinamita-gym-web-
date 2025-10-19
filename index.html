@@ -1,172 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dinamita Gym | Tienda de suplementos y accesorios</title>
-  <meta name="description" content="Suplementos originales, accesorios deportivos y Custom Gear by Dinamita. Fondo blanco, estilo limpio y moderno.">
-  <link rel="icon" href="icon-192.png">
-  <link rel="apple-touch-icon" href="icon-512.png">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inicio – Dinamita Gym</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#d00">
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Inicio – Dinamita Gym">
+<meta property="og:image" content="icon-512.png">
+<meta property="og:description" content="Explotamos tu potencial. Suplementos, Accesorios y Custom Gear.">
+<script defer src="app.js"></script>
 </head>
-<body>
-<header class="topbar">
-  <div class="max">
+
+<body data-page="home">
+
+<div class="layout">
+  <aside class="sidebar" aria-label="Menú lateral">
     <div class="brand">
-      <div class="logo">DINAMITA <span>GYM</span></div>
-      <button class="hamburger" aria-label="Abrir menú">☰</button>
+      <img src="icon-192.png" alt="Dinamita Gym" width="36" height="36">
+      <span>DINAMITA</span>
+      <button class="collapse" aria-label="Colapsar">☰</button>
     </div>
-    <nav class="nav">
-      <a href="#home">Inicio</a>
-      <a href="#catalogo">Suplementos</a>
-      <a href="#accesorios">Accesorios</a>
-      <a href="#custom">Custom Gear</a>
-      <a href="#cafe">Cafetería</a>
-      <a href="#top">Lo más vendido</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#contacto">Contacto</a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="mas-vendido.html">Lo más vendido</a>
+      <a href="suplementos.html">Suplementos</a>
+      <a href="accesorios.html">Accesorios</a>
+      <a href="custom.html">Custom Gear</a>
+      <a href="cafeteria.html">Cafetería</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
     </nav>
-  </div>
-</header>
+  </aside>
+  <main class="content">
 
-<main>
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="max hero-grid">
-      <div class="hero-copy">
-        <h1>Explotamos <span>tu potencial</span> 💥</h1>
-        <p>Suplementos originales, accesorios de alto rendimiento y Custom Gear diseñado por Dinamita.</p>
-        <div class="cta-row">
-          <a class="btn" href="#catalogo">Ver productos</a>
-          <a class="btn outline" href="https://wa.me/525643195153" target="_blank" rel="noopener">Pedir por WhatsApp</a>
-        </div>
-        <ul class="benefits">
-          <li>📦 Stock garantizado</li>
-          <li>✅ Productos originales</li>
-          <li>⚡ Entregas rápidas</li>
-          <li>💬 Asesoría fitness</li>
-        </ul>
-      </div>
-      <div class="hero-art">
-        <div class="mockup">
-          <div class="circle"></div>
-          <img src="icon-512.png" alt="Dinamita mockup">
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="hero">
+  <h1>Explotamos tu potencial</h1>
+  <p>Suplementos originales, accesorios, Custom Gear y cafetería.</p>
+</section>
 
-  <!-- TOP SELLERS -->
-  <section id="top" class="section">
-    <div class="max">
-      <h2>🔥 Lo más vendido</h2>
-      <div class="products" id="topList"></div>
-      <div class="brands">
-        <img alt="Mutant" src="https://dummyimage.com/140x40/ffffff/777.png&text=Mutant">
-        <img alt="MuscleTech" src="https://dummyimage.com/160x40/ffffff/777.png&text=MuscleTech">
-        <img alt="Nutrex" src="https://dummyimage.com/120x40/ffffff/777.png&text=Nutrex">
-        <img alt="RC" src="https://dummyimage.com/80x40/ffffff/777.png&text=RC">
-      </div>
-      <p class="hashtag">#MotivacionDinamita</p>
-    </div>
-  </section>
+<section>
+  <header class="section-header">
+    <h2>Lo más vendido</h2>
+    <a class="link" href="mas-vendido.html">Ver todo</a>
+  </header>
+  <div id="topList" class="grid"></div>
+</section>
 
-  <!-- CATALOGO SUPLEMENTOS -->
-  <section id="catalogo" class="section alt">
-    <div class="max">
-      <div class="sec-head">
-        <h2>🧃 Suplementos</h2>
-        <div class="tabs" id="supTabs">
-          <button data-cat="proteinas" class="active">Proteínas</button>
-          <button data-cat="aminoacidos">Aminoácidos</button>
-          <button data-cat="creatinas">Creatinas</button>
-          <button data-cat="preentrenos">Pre-entrenos</button>
-          <button data-cat="vitaminas">Vitaminas</button>
-        </div>
-      </div>
-      <div class="products" id="supList"></div>
-    </div>
-  </section>
+<section>
+  <header class="section-header">
+    <h2>Suplementos</h2>
+    <a class="link" href="suplementos.html">Ver todo</a>
+  </header>
+  <div id="supPreview" class="grid"></div>
+</section>
 
-  <!-- ACCESORIOS -->
-  <section id="accesorios" class="section">
-    <div class="max">
-      <h2>🧤 Accesorios</h2>
-      <div class="products" id="accList"></div>
-    </div>
-  </section>
+<section>
+  <header class="section-header">
+    <h2>Accesorios</h2>
+    <a class="link" href="accesorios.html">Ver todo</a>
+  </header>
+  <div id="accPreview" class="grid"></div>
+</section>
 
-  <!-- CUSTOM GEAR -->
-  <section id="custom" class="section dark">
-    <div class="max">
-      <div class="sec-head">
-        <h2>👕 Custom Gear by <span class="dinamita">DINAMITA</span></h2>
-        <p>Personaliza playeras, cinturones, shakers y más con tu nombre o frase.</p>
-      </div>
-      <div class="products" id="customList"></div>
-    </div>
-  </section>
+<section>
+  <header class="section-header">
+    <h2>Custom Gear</h2>
+    <a class="link" href="custom.html">Ver todo</a>
+  </header>
+  <div id="customPreview" class="grid"></div>
+</section>
 
-  <!-- CAFETERIA -->
-  <section id="cafe" class="section alt">
-    <div class="max">
-      <h2>☕ Cafetería Dinamita</h2>
-      <div class="products" id="cafeList"></div>
-    </div>
-  </section>
+<section>
+  <header class="section-header">
+    <h2>Cafetería</h2>
+    <a class="link" href="cafeteria.html">Ver todo</a>
+  </header>
+  <div id="cafePreview" class="grid"></div>
+</section>
 
-  <!-- NOSOTROS -->
-  <section id="nosotros" class="section">
-    <div class="max about">
-      <div>
-        <h2>🧠 Nosotros</h2>
-        <p>Nacimos en una cochera fabricando nuestro propio equipo. Hoy somos una comunidad que vive la disciplina y el progreso. Nuestra misión es ayudarte a entrenar seguro y motivado, con productos confiables y asesoría cercana.</p>
-        <ul class="values">
-          <li>💪 Esfuerzo</li>
-          <li>🎯 Disciplina</li>
-          <li>🤝 Comunidad</li>
-          <li>🔥 Pasión</li>
-        </ul>
-      </div>
-      <div class="gallery">
-        <div class="rect"></div>
-        <div class="rect"></div>
-        <div class="rect"></div>
-      </div>
-    </div>
-  </section>
+<section class="about-preview">
+  <h2>Nosotros</h2>
+  <p>Dinamita Gym nació para ayudarte a explotar tu potencial con atención real y comunidad.</p>
+  <a class="btn" href="nosotros.html">Conócenos</a>
+</section>
 
-  <!-- CONTACTO -->
-  <section id="contacto" class="section alt">
-    <div class="max contact">
-      <div>
-        <h2>📞 Contacto</h2>
-        <p>¿Tienes dudas o quieres un pedido rápido?</p>
-        <a class="btn" href="https://wa.me/525643195153" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
-        <p class="muted">dinamitagym00@gmail.com</p>
-      </div>
-      <div class="card">
-        <h3>Atajos</h3>
-        <ul class="shortcuts">
-          <li><a href="#top">Lo más vendido</a></li>
-          <li><a href="#catalogo">Proteínas</a></li>
-          <li><a href="#custom">Custom Gear</a></li>
-          <li><a href="#cafe">Cafetería</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-</main>
+<section class="cta">
+  <a class="btn big" target="_blank" rel="noopener" href="https://wa.me/525643195153?text=Hola%20Dinamita!%20Quiero%20más%20información">
+    Pedir por WhatsApp
+  </a>
+</section>
 
-<footer class="footer">
-  <div class="max">
-    <p><strong>DINAMITA GYM</strong> — Explotamos tu potencial 💥</p>
-    <p class="muted">© 2025 Dinamita Gym. Todos los derechos reservados.</p>
-  </div>
-</footer>
-
-<a href="https://wa.me/525643195153" class="wa" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
-
-<script src="app.js"></script>
-</body>
+  </main>
+</div>
 </html>

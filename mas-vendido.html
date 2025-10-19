@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lo más vendido – Dinamita Gym</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#d00">
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Lo más vendido – Dinamita Gym">
+<meta property="og:image" content="icon-512.png">
+<meta property="og:description" content="Explotamos tu potencial. Suplementos, Accesorios y Custom Gear.">
+<script defer src="app.js"></script>
+</head>
+
+<body data-page="catalog" data-best="1">
+
+<div class="layout">
+  <aside class="sidebar" aria-label="Menú lateral">
+    <div class="brand">
+      <img src="icon-192.png" alt="Dinamita Gym" width="36" height="36">
+      <span>DINAMITA</span>
+      <button class="collapse" aria-label="Colapsar">☰</button>
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="mas-vendido.html">Lo más vendido</a>
+      <a href="suplementos.html">Suplementos</a>
+      <a href="accesorios.html">Accesorios</a>
+      <a href="custom.html">Custom Gear</a>
+      <a href="cafeteria.html">Cafetería</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </aside>
+  <main class="content">
+
+<section>
+  <header class="section-header">
+    <h1>Lo más vendido</h1>
+  </header>
+  
+<div class="filters">
+  <input id="search" type="search" placeholder="Buscar producto o marca">
+  <select id="sort">
+    <option value="">Ordenar</option>
+    <option value="price-asc">Precio: menor a mayor</option>
+    <option value="price-desc">Precio: mayor a menor</option>
+  </select>
+</div>
+
+  <div id="catalogList" class="grid"></div>
+</section>
+
+  </main>
+</div>
+</html>
